@@ -24,6 +24,7 @@ public class Input {
 			count++;
 			System.out.print("Again(y/n)?: ");
 			y_n = this.sc.next();
+			this.sc.nextLine();   // buffer 날리기
 		}while(y_n.equals("Y")||y_n.equals("y"));
 		return count;
 	}
